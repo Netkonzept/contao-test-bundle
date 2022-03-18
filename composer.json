@@ -1,0 +1,57 @@
+{
+    "name": "netkonzept/contao-test-bundle",
+    "type": "contao-bundle",
+    "description": "test for custom Contao 4 bundles",
+    "homepage": "https://netkonzept-online.de",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Netkonzept",
+            "homepage": "https://netkonzept-online.de"
+        },
+        {
+            "name": "Contao Community",
+            "homepage": "https://contao.org/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "contao/core-bundle": "^4.9",
+        "symfony/framework-bundle": "^3.3",
+        "symfony/config": "^4.4 || ^5.1",
+        "symfony/dependency-injection": "^4.4 || ^5.1",
+        "symfony/http-kernel": "^4.4 || ^5.1"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "contao/easy-coding-standard": "^2.0",
+        "phpunit/phpunit": "^8.4",
+        "symfony/phpunit-bridge": "^4.4 || ^5.1"
+    },
+    "extra": {
+        "contao-manager-plugin": "Netkonzept\\ContaoTestBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netkonzept\\ContaoTestBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Netkonzept\\ContaoTestBundle\\Tests\\": "tests/"
+        }
+    },
+    "support": {
+        "issues": "https://netkonzept-online.de",
+        "source": "https://netkonzept-online.de"
+    },
+    "scripts": {
+        "cs-fixer": [
+            "vendor/bin/ecs check src/ tests/ --fix --ansi"
+        ]
+    }
+}
