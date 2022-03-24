@@ -1,4 +1,4 @@
 <?php
 
 // Frontend modules
-$GLOBALS['FE_MOD']['miscellaneous']['helloWorld'] = 'Acme\ContaoHelloWorldBundle\Module\TestModule';
+$GLOBALS['FE_MOD']['miscellaneous']['helloWorld'] = 'Netkonzept\ContaoTestBundle\Module\TestModule';
