@@ -1,13 +1,13 @@
 <?php
 
-namespace Acme\ContaoHelloWorldBundle\Module;
+namespace Netkonzept\ContaoTestBundle\Module;
 
-class HelloWorldModule extends \Module
+class TestModule extends \Module
 {
     /**
      * @var string
      */
-    protected $strTemplate = 'mod_helloWorld';
+    protected $strTemplate = 'mod_test';
 
     /**
      * Displays a wildcard in the back end.
